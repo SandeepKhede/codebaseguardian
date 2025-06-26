@@ -1,21 +1,24 @@
 {
   "name": "codebaseguardian",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered CLI to proactively detect and manage technical debt and code health",
-  "main": "lib/analyze.js",
+  "type": "module",
   "bin": {
-    "codebaseguardian": "bin/index.js"
+    "codebaseguardian": "./index.js"
   },
   "scripts": {
-    "start": "node bin/index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Your Name",
-  "license": "MIT",
-  "type": "module",
+  "author": "Sandeep Khede",
+  "license": "-",
   "dependencies": {
     "axios": "^1.6.0",
     "chalk": "^5.3.0",
-    "commander": "^11.0.0",
-    "node-fetch": "^3.3.2"
+    "commander": "^12.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
